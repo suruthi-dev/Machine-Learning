@@ -26,29 +26,29 @@ print(type(feature_list))
 
 data.info()
 
-Total entries : 1599 (Tiny Dataset by ML Standard)
-There are total 12 columns : 11 Features + 1 Label
+# Total entries : 1599 (Tiny Dataset by ML Standard)
+# There are total 12 columns : 11 Features + 1 Label
 
-  -Features :   'fixed acidity', 'volatile acidity', 'citric acid',
-               'residual sugar', 'chlorides', 'free sulfur dioxide',
-               'total sulfur dioxide', 'density', 'pH', 'sulphates', 'alcohol'
+#   -Features :   'fixed acidity', 'volatile acidity', 'citric acid',
+#                'residual sugar', 'chlorides', 'free sulfur dioxide',
+#                'total sulfur dioxide', 'density', 'pH', 'sulphates', 'alcohol'
                
-  -Label    :   quality
+#   -Label    :   quality
 
-# to understand decriptive statistics - mean sd quartiles
-data.describe()
+# # to understand decriptive statistics - mean sd quartiles
+# data.describe()
 
-quality :
+# quality :
 
-min : 3
+# min : 3
 
-25% : 5
+# 25% : 5
 
-50% : 6
+# 50% : 6
 
-75% : 6
+# 75% : 6
 
-max : 8
+# max : 8
 
 ## distribution of the wine quality
 ## datatype : <class 'pandas.core.series.Series'>
@@ -56,7 +56,7 @@ max : 8
 # data['quality']
 data['quality'].value_counts()
 
-A Histogram gives the count of how many samples occurs within a specific range(Bins)
+# A Histogram gives the count of how many samples occurs within a specific range(Bins)
 
 sns.set()
 data['quality'].hist()
@@ -65,11 +65,11 @@ plt.ylabel("Frequency")
 
 data['fixed acidity'].hist()
 
-We can create subplots in Python using matplotlib with the subplot method, which takes three arguments:
+# We can create subplots in Python using matplotlib with the subplot method, which takes three arguments:
 
-nrows: The number of rows of subplots in the plot grid.
-ncols: The number of columns of subplots in the plot grid.
-index: The plot that you have currently selected.
+# nrows: The number of rows of subplots in the plot grid.
+# ncols: The number of columns of subplots in the plot grid.
+# index: The plot that you have currently selected.
 
 data.columns
 
